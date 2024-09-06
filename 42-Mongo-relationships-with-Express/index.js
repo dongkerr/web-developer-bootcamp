@@ -38,13 +38,19 @@ app.get("/farms/new", (req, res) => {
 
 app.get("/farms/:id", async (req, res) => {
     const farm = await Farm.findById(req.params.id).populate("products")
-    console.log(farm)
+    // console.log(farm)
     res.render("farms/show", { farm })
 })
 
 app.post("/farms", async (req, res) => {
     const farm = new Farm(req.body);
     await farm.save();
+    res.redirect("/farms")
+})
+
+app.delete("/farms/:id", async (req, res) => {
+    const farm = await Farm.findByIdAndDelete(req.params.id);
+    
     res.redirect("/farms")
 })
 
