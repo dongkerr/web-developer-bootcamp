@@ -9,6 +9,8 @@ import ColorList from './ColorList'
 import Slots from './Slots'
 import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
+import Clicker from './Clicker'
+import Form from './Form'
 
 // const data = [
 //   {id: 1, item: "eggs", quantity: 12, completed: false},
@@ -29,7 +31,10 @@ const propterties = [
 function App() {
   return (
     <div>
-      <PropertyList properties={propterties}/>
+      {/* <Form/> */}
+      <Clicker message="HI!!!" buttonText="CLick Me"/>
+      <Clicker message="Please Stop Clicking Me!" buttonText="Do not click"/>
+      {/* <PropertyList properties={propterties}/> */}
       {/* <ShoppingList items = {data}/> */}
       {/* <Slots val1 = "🍒" val2 = "🍌" val3 = "🍒" />
       <Heading color="magenta" text="welcome!" fontSize = "20px" />
