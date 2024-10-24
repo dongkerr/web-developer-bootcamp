@@ -11,6 +11,11 @@ import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
 import Clicker from './Clicker'
 import Form from './Form'
+import Counter from './Counter'
+import Toggler from './Toggler'
+import TogglerCounter from './ToggleCounter'
+import ColorBox from './ColorBox'
+import ColorBoxGrid from './ColorBoxGrid'
 
 // const data = [
 //   {id: 1, item: "eggs", quantity: 12, completed: false},
@@ -28,12 +33,37 @@ const propterties = [
   {id: 129035, name:"Gold Miner Campground", rating:4.69, price:96},
 ]
 
+const colors = [
+  "#194d52",
+  "#54d441",
+  "#0925f9",
+  "#b790ae",
+  "#c77e5b",
+  "#473aec",
+  "#654a6e",
+  "#fbeb0b",
+  "#c93f71",
+  "#228098",
+  "#8956b5",
+  "#2a234c",
+  "#3aafc8",
+  "#f7637c",
+  "#f438c5",
+  "#fbb8d6",
+  "#679e48"
+]
+
 function App() {
   return (
     <div>
+      {/* <ColorBox colors={colors}/> */}
+      <ColorBoxGrid colors={colors}/>
+      {/* <TogglerCounter/> */}
+      {/* <Toggler/> */}
+      {/* <Counter/> */}
       {/* <Form/> */}
-      <Clicker message="HI!!!" buttonText="CLick Me"/>
-      <Clicker message="Please Stop Clicking Me!" buttonText="Do not click"/>
+      {/* <Clicker message="HI!!!" buttonText="CLick Me"/>
+      <Clicker message="Please Stop Clicking Me!" buttonText="Do not click"/> */}
       {/* <PropertyList properties={propterties}/> */}
       {/* <ShoppingList items = {data}/> */}
       {/* <Slots val1 = "🍒" val2 = "🍌" val3 = "🍒" />
